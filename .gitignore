@@ -11,6 +11,142 @@
 **/.tmh/**
 **/*.log
 
+### Maven template
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse m2e generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+### CMake template
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+CMakeUserPresets.json
+
+### Magento2 template
+/sitemap
+/sitemap.xml
+/pub/sitemap
+/pub/sitemap.xml
+/app/config_sandbox
+/app/etc/config.php
+/app/etc/env.php
+/app/code/Magento/TestModule*
+/lib/internal/flex/uploader/.actionScriptProperties
+/lib/internal/flex/uploader/.flexProperties
+/lib/internal/flex/uploader/.project
+/lib/internal/flex/uploader/.settings
+/lib/internal/flex/varien/.actionScriptProperties
+/lib/internal/flex/varien/.flexLibProperties
+/lib/internal/flex/varien/.project
+/lib/internal/flex/varien/.settings
+/.grunt
+/.php_cs.cache
+/grunt-config.json
+/dev/tools/grunt/configs/local-themes.js
+
+/pub/media/*.*
+!/pub/media/.htaccess
+/pub/media/attribute/*
+!/pub/media/attribute/.htaccess
+/pub/media/analytics/*
+/pub/media/catalog/*
+!/pub/media/catalog/.htaccess
+/pub/media/customer/*
+!/pub/media/customer/.htaccess
+/pub/media/downloadable/*
+!/pub/media/downloadable/.htaccess
+/pub/media/favicon/*
+/pub/media/import/*
+!/pub/media/import/.htaccess
+/pub/media/logo/*
+/pub/media/theme/*
+/pub/media/theme_customization/*
+!/pub/media/theme_customization/.htaccess
+/pub/media/wysiwyg/*
+!/pub/media/wysiwyg/.htaccess
+/pub/media/tmp/*
+!/pub/media/tmp/.htaccess
+/pub/media/captcha/*
+!/pub/media/captcha/.htaccess
+/pub/static/*
+!/pub/static/.htaccess
+
+/var/*
+!/var/.htaccess
+/vendor/*
+!/vendor/.htaccess
+/generated/*
+!/generated/.htaccess
+
+### Magento1 template
+# gitignore template for Magento v1 projects
+#
+# It is recommended that you use `Magento.gitignore` as this is the latest version
+
+/PATCH_*.sh
+
+/app/etc/local.xml
+
+/media/*
+!/media/.htaccess
+
+!/media/customer
+/media/customer/*
+!/media/customer/.htaccess
+
+!/media/dhl
+/media/dhl/*
+!/media/dhl/logo.jpg
+
+!/media/downloadable
+/media/downloadable/*
+!/media/downloadable/.htaccess
+
+!/media/xmlconnect
+/media/xmlconnect/*
+
+!/media/xmlconnect/custom
+/media/xmlconnect/custom/*
+!/media/xmlconnect/custom/ok.gif
+
+!/media/xmlconnect/original
+/media/xmlconnect/original/*
+!/media/xmlconnect/original/ok.gif
+
+!/media/xmlconnect/system
+/media/xmlconnect/system/*
+!/media/xmlconnect/system/ok.gif
+
+/var/*
+!/var/.htaccess
+
+!/var/package
+/var/package/*
+!/var/package/*.xml
+
+
 ### Node template
 # Logs
 logs
@@ -169,6 +305,33 @@ _Boot/
 _CompileInfo/
 _Libraries/
 _ModuleInstall/
+### Go template
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# env file
+.env
+
 ### CDK template
 # CDK asset staging directory.
 # For more information about AWS-CDK, see  https://docs.aws.amazon.com/cdk/
@@ -210,6 +373,122 @@ deps
 _build/
 _checkouts/
 
+### Terragrunt template
+# Ignore the default terragrunt cache directory
+# https://terragrunt.gruntwork.io/docs/features/caching/
+.terragrunt-cache
+
+### RhodesRhomobile template
+rholog-*
+sim-*
+bin/libs
+bin/RhoBundle
+bin/tmp
+bin/target
+bin/*.ap_
+*.o
+*.jar
+
+### FlaxEngine template
+# Ignore Flax project files
+Binaries/
+Cache/
+Logs/
+Output/
+Screenshots/
+*.HotReload.*
+
+# Ignore Visual Studio project files (generated locally)
+*.csproj
+*.sln
+
+# Ignore thumbnails created by Windows
+Thumbs.db
+
+# Ignore files built by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+
+# Ignore Nuget packages folder
+packages/
+
+### OpenCart template
+.htaccess
+/config.php
+admin/config.php
+
+!index.html
+
+download/
+image/data/
+image/cache/
+system/cache/
+system/logs/
+
+system/storage/
+
+# vQmod log files
+vqmod/logs/*
+# vQmod cache files
+vqmod/vqcache/*
+vqmod/checked.cache
+vqmod/mods.cache
+
+### OCaml template
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+
+# ocamlbuild working directory
+_build/
+
+# ocamlbuild targets
+*.byte
+*.native
+
+# oasis generated files
+setup.data
+setup.log
+
+# Merlin configuring file for Vim and Emacs
+.merlin
+
+# Dune generated files
+*.install
+
+# Local OPAM switch
+_opam/
+
 ### Yeoman template
 node_modules/
 bower_components/
@@ -217,6 +496,62 @@ bower_components/
 
 build/
 dist/
+
+### Haskell template
+dist
+dist-*
+cabal-dev
+*.o
+*.hi
+*.hie
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.hpc
+.hsenv
+.cabal-sandbox/
+cabal.sandbox.config
+*.prof
+*.aux
+*.hp
+*.eventlog
+.stack-work/
+cabal.project.local
+cabal.project.local~
+.HTF/
+.ghc.environment.*
+
+### ROS2 template
+install/
+log/
+build/
+
+# Ignore generated docs
+*.dox
+*.wikidoc
+
+# eclipse stuff
+.project
+.cproject
+
+# qcreator stuff
+CMakeLists.txt.user
+
+srv/_*.py
+*.pcd
+*.pyc
+qtcreator-*
+*.user
+
+*~
+
+# Emacs
+.#*
+
+# Colcon custom files
+COLCON_IGNORE
+AMENT_IGNORE
 
 ### JupyterNotebooks template
 # gitignore template for Jupyter Notebooks
@@ -231,6 +566,181 @@ ipython_config.py
 
 # Remove previous ipynb_checkpoints
 #   git rm -r .ipynb_checkpoints/
+
+### Prestashop template
+# Cache, temp and personal files
+
+/.htaccess
+*.log
+
+# Cache
+/cache/*
+!/cache/.htaccess
+!/cache/cachefs/index.php
+!/cache/deprecated.txt
+!/cache/index.php
+!/cache/purifier/index.php
+!/cache/push/activity
+!/cache/push/index.php
+!/cache/push/trends
+!/cache/sandbox/index.php
+!/cache/smarty/cache/index.php
+!/cache/smarty/compile/index.php
+!/cache/smarty/index.php
+!/cache/tcpdf/index.php
+
+# Download
+/download/*
+!/download/.htaccess
+!/download/index.php
+
+# Images
+/img/*
+!/img/.htaccess
+!/img/index.php
+!/img/404.gif
+!/img/bg_500.png
+!/img/bg_loader.png
+!/img/favicon.ico
+!/img/loader.gif
+!/img/loadingAnimation.gif
+!/img/logo.jpg
+!/img/logo.png
+!/img/logo_invoice.jpg
+!/img/logo_stores.png
+!/img/macFFBgHack.png
+!/img/prestashop-avatar.png
+!/img/prestashop@2x.png
+!/img/preston-login-wink@2x.png
+!/img/preston-login@2x.png
+!/img/questionmark.png
+!/img/genders/index.php
+!/img/admin/index.php
+!/img/c/index.php
+!/img/cms/index.php
+!/img/co/index.php
+!/img/jquery-ui
+!/img/l/index.php
+!/img/m/index.php
+!/img/os/index.php
+!/img/p/index.php
+!/img/s/index.php
+!/img/scenes
+!/img/st/index.php
+!/img/su/index.php
+!/img/t/index.php
+!/img/tmp/index.php
+
+# Upload
+/upload/*
+!/upload/.htaccess
+
+/vendor/*
+/docs/phpdoc-sf/
+/composer.lock
+*.hot-update.js
+*.hot-update.json
+
+
+/admin-dev/autoupgrade/*
+!/admin-dev/autoupgrade/index.php
+!/admin-dev/autoupgrade/backup/index.php
+
+/admin-dev/backups/*
+!/admin-dev/backups/.htaccess
+
+/admin-dev/import/*
+!/admin-dev/import/.htaccess
+!/admin-dev/import/index.php
+
+/admin-dev/export/*
+!/admin-dev/export/.htaccess
+!/admin-dev/export/index.php
+
+# Downloaded RTL files
+/admin-dev/themes/default/css/bundle/default_rtl.css
+/admin-dev/themes/default/css/bundle/shared_rtl.css
+/admin-dev/themes/default/css/font_rtl.css
+/admin-dev/themes/default/css/overrides_rtl.css
+/admin-dev/themes/default/css/vendor/font-awesome/font-awesome_rtl.css
+/admin-dev/themes/default/css/vendor/nv.d3_rtl.css
+/admin-dev/themes/default/css/vendor/titatoggle-min_rtl.css
+/admin-dev/themes/default/public/theme_rtl.css
+/admin-dev/themes/new-theme/css/module/drop_rtl.css
+/admin-dev/themes/new-theme/css/right-sidebar_rtl.css
+
+themes/*/cache/*
+
+# Config
+
+config/settings.inc.php
+config/settings.old.php
+config/xml/*
+config/themes/*
+!config/xml/themes/default.xml
+themes/*/config/settings_*.json
+app/config/parameters.old.yml
+app/config/config.php
+
+# Themes, modules and overrides
+
+modules/*
+override/*
+themes/*/
+!themes/classic
+!themes/_core
+!themes/_libraries
+
+# Vendors and dependencies
+
+bower_components/
+node_modules/
+composer.phar
+php-cs-fixer
+.grunt/*
+
+# Translations and emails templates
+
+translations/*
+mails/*
+!mails/themes/
+!mails/_partials/
+themes/default-bootstrap/lang/*
+themes/default-bootstrap/modules/*/translations/*.php
+themes/default-bootstrap/mails/*
+!themes/default-bootstrap/mails/en/
+themes/default-bootstrap/modules/*/mails/*
+!themes/default-bootstrap/modules/*/mails/en
+
+# MISC
+
+*sitemap.xml
+/robots.txt
+
+# Symfony
+
+/bin/
+/app/Resources/geoip/GeoLite2-City.mmdb
+/app/Resources/translations/*
+!/app/Resources/translations/default
+/app/config/parameters.yml
+/app/config/parameters.php
+/build/
+/phpunit.xml
+/var/*
+!/var/cache
+/var/cache/*
+!var/cache/.gitkeep
+!/var/logs
+/var/logs/*
+!var/logs/.gitkeep
+!/var/sessions
+/var/sessions/*
+!var/sessions/.gitkeep
+!var/SymfonyRequirements.php
+/vendor/
+/web/bundles/
+
 
 ### Eagle template
 # Ignore list for Eagle, a PCB layout tool
@@ -322,6 +832,10 @@ pom.xml.asc
 /server/default/deploy/*.xml.failed
 /server/default/deploy/*.war.failed
 
+### Toit template
+.packages
+*_pb.toit
+
 ### IGORPro template
 # Avoid including Experiment files: they can be created and edited locally to test the ipf files
 *.pxp
@@ -386,6 +900,15 @@ Cargo.lock
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+### Nikola template
+# gitignore template for Nikola static site generator
+# website: https://getnikola.com/
+
+.doit.db
+*.py[cod]
+cache/
+output/
+
 ### SPFx template
 #SharePoint Framework (SPFx)
 # Logs
@@ -420,6 +943,43 @@ obj
 
 # Styles Generated Code
 *.scss.ts
+
+### Perl template
+!Build/
+.last_cover_stats
+/META.yml
+/META.json
+/MYMETA.*
+*.o
+*.pm.tdy
+*.bs
+
+# Devel::Cover
+cover_db/
+
+# Devel::NYTProf
+nytprof.out
+
+# Dist::Zilla
+/.build/
+
+# Module::Build
+_build/
+Build
+Build.bat
+
+# Module::Install
+inc/
+
+# ExtUtils::MakeMaker
+/blib/
+/_eumm/
+/*.gz
+/Makefile
+/Makefile.old
+/MANIFEST.bak
+/pm_to_blib
+/*.zip
 
 ### AL template
 ### AL ###
@@ -482,6 +1042,74 @@ TestResults.xml
 # Ignored files for GNOME extension git repository
 
 *.zip
+
+### JENKINS_HOME template
+# Learn more about Jenkins and JENKINS_HOME directory for which this file is
+# intended.
+#
+#  http://jenkins-ci.org/
+#  https://wiki.jenkins-ci.org/display/JENKINS/Administering+Jenkins
+#
+# Note: secret.key is purposefully not tracked by git. This should be backed up
+# separately because configs may contain secrets which were encrypted using the
+# secret.key.  To back up secrets use 'tar -czf /tmp/secrets.tgz secret*' and
+# save the file separate from your repository.  If you want secrets backed up
+# with configuration, then see the bottom of this file for an example.
+
+# Ignore all JENKINS_HOME except jobs directory, root xml config, and
+# .gitignore file.
+/*
+!/jobs
+!/.gitignore
+!/*.xml
+
+# Ignore all files in jobs subdirectories except for folders.
+# Note: git doesn't track folders, only file content.
+jobs/**
+!jobs/**/
+
+# Uncomment the following line to save next build numbers with config.
+
+#!jobs/**/nextBuildNumber
+
+# For performance reasons, we want to ignore builds in Jenkins jobs because it
+# contains many tiny files on large installations.  This can impact git
+# performance when running even basic commands like 'git status'.
+builds
+indexing
+
+# Exclude only config.xml files in repository subdirectories.
+!config.xml
+
+# Don't track workspaces (when users build on the master).
+jobs/**/*workspace
+
+# Security warning: If secrets are included with your configuration, then an
+# adversary will be able to decrypt all encrypted secrets within Jenkins
+# config.  Including secrets is a bad practice, but the example is included in
+# case someone still wants it for convenience.  Uncomment the following line to
+# include secrets for decryption with repository configuration in Git.
+
+#!/secret*
+
+# As a result, only Jenkins settings and job config.xml files in JENKINS_HOME
+# will be tracked by git.
+
+### ExtJs template
+.architect
+bootstrap.css
+bootstrap.js
+bootstrap.json
+bootstrap.jsonp
+build/
+classic.json
+classic.jsonp
+ext/
+modern.json
+modern.jsonp
+resources/sass/.sass-cache/
+resources/.arch-internal-preview.css
+.arch-internal-preview.css
 
 ### Joomla template
 /.htaccess
@@ -1190,6 +1818,70 @@ TestResults.xml
 /robots.txt.dist
 /web.config.txt
 
+### Drupal template
+# gitignore template for Drupal 8 projects
+#
+# earlier versions of Drupal are tracked in `community/PHP/`
+#
+# follows official upstream conventions:
+# https://www.drupal.org/docs/develop/using-composer
+
+# Ignore configuration files that may contain sensitive information
+/web/sites/*/*settings*.php
+/web/sites/*/*services*.yml
+
+# Ignore paths that may contain user-generated content
+/web/sites/*/files
+/web/sites/*/public
+/web/sites/*/private
+/web/sites/*/files-public
+/web/sites/*/files-private
+
+# Ignore paths that may contain temporary files
+/web/sites/*/translations
+/web/sites/*/tmp
+/web/sites/*/cache
+
+# Ignore drupal core (if not versioning drupal sources)
+/web/vendor
+/web/core
+/web/modules/README.txt
+/web/profiles/README.txt
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/sites/README.txt
+/web/themes/README.txt
+/web/.csslintrc
+/web/.editorconfig
+/web/.eslintignore
+/web/.eslintrc.json
+/web/.gitattributes
+/web/.htaccess
+/web/.ht.router.php
+/web/autoload.php
+/web/composer.json
+/web/composer.lock
+/web/example.gitignore
+/web/index.php
+/web/INSTALL.txt
+/web/LICENSE.txt
+/web/README.txt
+/web/robots.txt
+/web/update.php
+/web/web.config
+
+# Ignore vendor dependencies and scripts
+/vendor
+/composer.phar
+/composer
+/robo.phar
+/robo
+/drush.phar
+/drush
+/drupal.phar
+/drupal
+
 ### GitBook template
 # Node rules:
 ## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
@@ -1718,6 +2410,51 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+### Yii template
+assets/*
+!assets/.gitignore
+protected/runtime/*
+!protected/runtime/.gitignore
+protected/data/*.db
+themes/classic/views/
+
+### AppEngine template
+# Google App Engine generated folder
+appengine-generated/
+
+### KiCad template
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+~*.lck
+\#auto_saved_files#
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
+
 ### Go.AllowList template
 # Allowlisting gitignore template for GO projects prevents us
 # from adding various unwanted local files, such as generated
@@ -1742,6 +2479,70 @@ FodyWeavers.xsd
 
 # ...even if they are in subdirectories
 !*/
+
+### Swift template
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
 
 ### IAR template
 # Compiled binaries
@@ -1797,6 +2598,29 @@ Backup*
 salesforce.schema
 Referenced Packages
 
+### LemonStand template
+boot.php
+index.php
+install.php
+/config/*
+!/config/config.php
+/controllers/*
+/init/*
+/logs/*
+/phproad/*
+/temp/*
+/uploaded/*
+/installer_files/*
+/modules/backend/*
+/modules/blog/*
+/modules/cms/*
+/modules/core/*
+/modules/session/*
+/modules/shop/*
+/modules/system/*
+/modules/users/*
+# add content_*.php if you don't want erase client changes to content
+
 ### Elixir template
 /_build
 /cover
@@ -1816,6 +2640,15 @@ erl_crash.dump
 
 # Ignore build folder
 build_*
+
+### Jekyll template
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+# Ignore folders generated by Bundler
+.bundle/
+vendor/
 
 ### C template
 # Prerequisites
@@ -1974,6 +2807,73 @@ server.pid
 ### Lithium template
 libraries/*
 resources/tmp/*
+
+### uVision template
+# git ignore file for Keil µVision Project
+
+# µVision 5 and µVision 4 Project screen layout file
+*.uvguix.*
+*.uvgui.*
+
+# Listing Files
+*.i
+*.lst
+*.m51
+*.m66
+*.map
+
+# Object Files
+*.axf
+*.b[0-2][0-9]
+*.b3[0-1]
+*.bak
+*.build_log.htm
+*.crf
+*.d
+*.dep
+*.elf
+*.htm
+*.iex
+*.lnp
+*.o
+*.obj
+*.sbr
+
+# Firmware Files
+*.bin
+*.h86
+*.hex
+
+# Build Files
+.bat
+
+# Debugger Files
+.ini
+
+# JLink Files
+JLinkLog.txt
+
+# Other Files
+
+### GitHubPages template
+# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
+# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+
+# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Additional Ruby/bundler ignore for when you run: bundle install
+/vendor
+
+# Specific ignore for GitHub Pages
+# GitHub Pages will always use its own deployed version of pages-gem
+# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
+# counterproductive to check this file into the repository.
+# Details at https://github.com/github/pages-gem/issues/768
+Gemfile.lock
 
 ### Plone template
 *.pyc
@@ -2222,6 +3122,51 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+### Drupal7 template
+# gitignore template for Drupal 7 projects
+#
+# It is recommended that you use `Drupal.gitignore` as this is the latest version
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/*settings*.php
+sites/example.sites.php
+
+# Ignore paths that contain generated content.
+files/
+sites/*/files
+sites/*/private
+sites/*/translations
+
+# Ignore default text files
+robots.txt
+/CHANGELOG.txt
+/COPYRIGHT.txt
+/INSTALL*.txt
+/LICENSE.txt
+/MAINTAINERS.txt
+/UPGRADE.txt
+/README.txt
+sites/README.txt
+sites/all/libraries/README.txt
+sites/all/modules/README.txt
+sites/all/themes/README.txt
+
+# Ignore everything but the "sites" folder ( for non core developer )
+.htaccess
+web.config
+authorize.php
+cron.php
+index.php
+install.php
+update.php
+xmlrpc.php
+/includes
+/misc
+/modules
+/profiles
+/scripts
+/themes
+
 ### V template
 *.exe
 *.o
@@ -2235,10 +3180,90 @@ terraform.rc
 *.bak
 *.out
 
+### Objective-C template
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+### Textpattern template
+.htaccess
+css.php
+rpc/
+sites/site*/admin/
+sites/site*/private/
+sites/site*/public/admin/
+sites/site*/public/setup/
+sites/site*/public/theme/
+textpattern/
+HISTORY.txt
+README.txt
+
 ### Beef template
 build/
 recovery/
 BeefSpace_User.toml
+
+### Agda template
+*.agdai
+MAlonzo/**
+
+### Godot template
+# Godot 4+ specific ignores
+.godot/
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json
 
 ### Pimcore template
 # gitignore template for Pimcore CMS
@@ -2295,6 +3320,14 @@ BeefSpace_User.toml
 # keep .dummy files
 !.dummy
 
+### Composer template
+composer.phar
+/vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
 ### Java template
 # Compiled class file
 *.class
@@ -2350,10 +3383,101 @@ replay_pid*
 !/upload/index.html
 /upload_backup/
 
+### Coq template
+.*.aux
+.*.d
+*.a
+*.cma
+*.cmi
+*.cmo
+*.cmx
+*.cmxa
+*.cmxs
+*.glob
+*.ml.d
+*.ml4.d
+*.mlg.d
+*.mli.d
+*.mllib.d
+*.mlpack.d
+*.native
+*.o
+*.v.d
+*.vio
+*.vo
+*.vok
+*.vos
+.coq-native
+.csdp.cache
+.lia.cache
+.nia.cache
+.nlia.cache
+.nra.cache
+csdp.cache
+lia.cache
+nia.cache
+nlia.cache
+nra.cache
+native_compute_profile_*.data
+
+# generated timing files
+*.timing.diff
+*.v.after-timing
+*.v.before-timing
+*.v.timing
+time-of-build-after.log
+time-of-build-before.log
+time-of-build-both.log
+time-of-build-pretty.log
+
+### GWT template
+*.class
+
+# Package Files #
+*.jar
+*.war
+
+# gwt caches and compiled units #
+war/gwt_bree/
+gwt-unitCache/
+
+# boilerplate generated classes #
+.apt_generated/
+
+# more caches and things from deploy #
+war/WEB-INF/deploy/
+war/WEB-INF/classes/
+
+#compilation logs
+.gwt/
+
+#gwt junit compilation files
+www-test/
+
+#old GWT (1.5) created this dir
+.gwt-tmp/
+
 ### B4X template
 **/Objects
 **/AutoBackups
 *.meta
+
+### Vue template
+# gitignore template for Vue.js projects
+#
+# Recommended template: Node.gitignore
+
+# TODO: where does this rule come from?
+docs/_book
+
+# TODO: where does this rule come from?
+test/
+
+### Sass template
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
 
 ### Stella template
 # Atari 2600 (Stella) support for multiple assemblers
@@ -2459,6 +3583,32 @@ __recovery/
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
 
+### Kotlin template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
 ### CUDA template
 *.i
 *.ii
@@ -2466,6 +3616,32 @@ modules/
 *.ptx
 *.cubin
 *.fatbin
+
+### Julia template
+# Files generated by invoking Julia with --code-coverage
+*.jl.cov
+*.jl.*.cov
+
+# Files generated by invoking Julia with --track-allocation
+*.jl.mem
+
+# System-specific files and directories generated by the BinaryProvider and BinDeps packages
+# They contain absolute paths specific to the host computer, and so should not be committed
+deps/deps.jl
+deps/build.log
+deps/downloads/
+deps/usr/
+deps/src/
+
+# Build artifacts for creating documentation generated by the Documenter package
+docs/build/
+docs/site/
+
+# File generated by Pkg, the package manager, based on a corresponding Project.toml
+# It records a fixed state of all packages used by the project. As such, it should not be
+# committed for packages, but should be committed for applications that require a static
+# environment.
+Manifest.toml
 
 ### Red template
 # gitignore template for Red programming language
@@ -2570,6 +3746,24 @@ crash.log
 pkg/
 src/
 
+### Puppet template
+# gitignore template for Puppet modules
+# website: https://forge.puppet.com/
+
+# Built packages
+pkg/*
+
+# Should run on multiple platforms so don't check in
+Gemfile.lock
+
+# Tests
+spec/fixtures/*
+coverage/*
+
+# Third-party
+vendor/*
+.bundle/*
+
 ### Ada template
 # Object file
 *.o
@@ -2601,11 +3795,57 @@ opa-debug-js
 *.scm#*
 .#*.scm
 
+### IAR_EWARM template
+# gitignore template for the IAR EWARM
+# website: https://www.iar.com/knowledge/support/technical-notes/ide/which-files-should-be-version-controlled/
+
+# Some tools will put the EWARM files
+# under a subdirectory with the same name
+# as the configuration.
+# Example
+# EWARM/Config1/Obj /List /Exe
+# EWARM/Config2/Obj /List /Exe
+EWARM/**/Obj
+EWARM/**/List
+EWARM/**/Exe
+
+# Autogenerated project files
+*.dep
+*.ewt
+
+# Autogenerated folder for debugger
+EWARM/settings
+
 ### Elm template
 # elm-package generated files
 elm-stuff
 # elm-repl generated files
 repl-temp-*
+
+### Bitrix template
+# gitignore template for 1C-Bitrix, a PHP-based CMS
+# website: https://www.1c-bitrix.ru
+
+#Exclude all of core files
+/bitrix/*
+
+#But not the templates and non bitrix components
+!/bitrix/templates
+!/bitrix/components
+/bitrix/components/bitrix
+
+#Exclude bitrix gadgets
+!/bitrix/gadgets
+/bitrix/gadgets/bitrix
+
+#User can use that directory to store some stuff, but it's not really recommended, just use /local instead of this
+!/bitrix/php_interface/
+
+#Exclude database configs
+/bitrix/php_interface/dbconn.php
+
+#Exclude default file storage directory
+/upload/
 
 ### DM template
 *.dmb
@@ -2667,2165 +3907,6 @@ repl-temp-*
 
 #include default location for packages
 !**/umbraco/Data/packages
-
-### WordPress template
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
-
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
-
-# Configuration
-wp-config.php
-
-# Example themes
-/wp-content/themes/twenty*/
-
-# Example plugin
-/wp-content/plugins/hello.php
-
-# Uploads
-/wp-content/uploads/
-
-# Log files
-*.log
-
-# htaccess
-/.htaccess
-
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
-### Racket template
-.DS_Store
-compiled/
-/doc/
-*~
-*.bak
-\#*
-.\#*
-
-### SCons template
-# for projects that use SCons for building: http://http://www.scons.org/
-.sconsign.dblite
-
-# When configure fails, SCons outputs these
-config.log
-.sconf_temp
-
-### Fancy template
-*.rbc
-*.fyc
-
-### Finale template
-*.bak
-*.db
-*.avi
-*.pdf
-*.ps
-*.mid
-*.midi
-*.mp3
-*.aif
-*.wav
-# Some versions of Finale have a bug and randomly save extra copies of
-# the music source as "<Filename> copy.mus"
-*copy.mus
-
-### SketchUp template
-*.skb
-
-### PureScript template
-# Dependencies
-.psci_modules
-.spago
-bower_components
-node_modules
-
-# Generated files
-.psci
-output
-
-### EPiServer template
-######################
-## EPiServer Files
-######################
-*License.config
-
-### Grails template
-# .gitignore for Grails 1.2 and 1.3
-# Although this should work for most versions of grails, it is
-# suggested that you use the "grails integrate-with --git" command
-# to generate your .gitignore file.
-
-# web application files
-/web-app/WEB-INF/classes
-
-# default HSQL database files for production mode
-/prodDb.*
-
-# general HSQL database files
-*Db.properties
-*Db.script
-
-# logs
-/stacktrace.log
-/test/reports
-/logs
-
-# project release file
-/*.war
-
-# plugin release files
-/*.zip
-/plugin.xml
-
-# older plugin install locations
-/plugins
-/web-app/plugins
-
-# "temporary" build files
-/target
-
-### ZendFramework template
-# Composer files
-composer.phar
-vendor/
-
-# Local configs
-config/autoload/*.local.php
-
-# Binary gettext files
-*.mo
-
-# Data
-data/logs/
-data/cache/
-data/sessions/
-data/tmp/
-temp/
-
-#Doctrine 2
-data/DoctrineORMModule/Proxy/
-data/DoctrineORMModule/cache/
-
-# Legacy ZF1
-demos/
-extras/documentation
-
-### Phalcon template
-/cache/
-/config/development/
-
-### Gretl template
-# gitignore template for Gretl
-# website: http://gretl.sourceforge.net/
-
-# Auto-generated log file is overwritten whenever you start a new session
-session.inp
-
-# Auto-generated temporary string code table
-string_table.txt
-
-### Lilypond template
-*.pdf
-*.ps
-*.midi
-*.mid
-*.log
-*~
-
-### OpenSSL template
-# OpenSSL-related files best not committed
-
-## Certificate Authority
-*.ca
-
-## Certificate
-*.crt
-
-## Certificate Sign Request
-*.csr
-
-## Certificate
-*.der
-
-## Key database file
-*.kdb
-
-## OSCP request data
-*.org
-
-## PKCS #12
-*.p12
-
-## PEM-encoded certificate data
-*.pem
-
-## Random number seed
-*.rnd
-
-## SSLeay data
-*.ssleay
-
-## S/MIME message
-*.smime
-
-### Packer template
-# Cache objects
-packer_cache/
-
-# Crash log
-crash.log
-
-# https://www.packer.io/guides/hcl/variables
-# Exclude all .pkrvars.hcl files, which are likely to contain sensitive data,
-# such as password, private keys, and other secrets. These should not be part of
-# version control as they are data points which are potentially sensitive and
-# subject to change depending on the environment.
-#
-*.pkrvars.hcl
-
-# For built boxes
-*.box
-
-### esp-idf template
-# gitignore template for esp-idf, the official development framework for ESP32
-# https://github.com/espressif/esp-idf
-
-build/
-sdkconfig
-sdkconfig.old
-
-### CodeIgniter template
-*/config/development
-*/logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!system/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
-
-user_guide_src/build/*
-user_guide_src/cilexer/build/*
-user_guide_src/cilexer/dist/*
-user_guide_src/cilexer/pycilexer.egg-info/*
-
-#codeigniter 3
-application/logs/*
-!application/logs/index.html
-!application/logs/.htaccess
-/vendor/
-
-### Xojo template
-# Xojo (formerly REALbasic and Real Studio)
-
-Builds*
-*.debug
-*.debug.app
-Debug*.exe
-Debug*/Debug*.exe
-Debug*/Debug*\ Libs
-*.rbuistate
-*.xojo_uistate
-*.obsolete*
-
-### Sdcc template
-# SDCC stuff
-*.lnk
-*.lst
-*.map
-*.mem
-*.rel
-*.rst
-*.sym
-
-### Xilinx template
-# gitignore template for Xilinx Vivado Design Suite
-# website: https://www.xilinx.com/support/download.html
-
-# [home]
-*.jou
-*.log
-*.debug
-*.str
-*.zip
-*.tmp
-*.rst
-*.os
-*.js
-*.pb
-*.dcp
-*.hwdef
-*.vds
-*.veo
-*.wdf
-*.vdi
-*.dmp
-*.rpx
-*.rpt
-*_stub.v
-*_stub.vhdl
-*_funcsim.v
-*_funcsim.vhdl
-.project
-
-# [dir]
-*.cache
-.metadata
-*.data
-*.ipdefs
-.Xil
-*.sdk
-*.hw
-*.ip_user_files
-
-### IP synth
-*_synth_*
-
-.jobs
-
-### project synth
-*/*.runs/synth*/*.xml
-*/*.runs/synth*/*.txt
-*/*.runs/synth*/*.sh
-*/*.runs/synth*/*.tcl
-*/*.runs/synth*/*.bat
-*/*.runs/synth*/*.xdc
-!*/*.runs/synth*/*utilization*.rpt
-
-*.runs/synth*/*.xml
-*.runs/synth*/*.txt
-*.runs/synth*/*.sh
-*.runs/synth*/*.tcl
-*.runs/synth*/*.bat
-*.runs/synth*/*.xdc
-!*.runs/synth*/*utilization*.rpt
-
-### project impl
-*/*.runs/impl*/*.xml
-*/*.runs/impl*/*.html
-*/*.runs/impl*/*.txt
-*/*.runs/impl*/*.sh
-*/*.runs/impl*/*.tcl
-*/*.runs/impl*/*.bat
-!*/*.runs/impl*/*utilization*.rpt
-
-*.runs/impl*/*.xml
-*.runs/impl*/*.html
-*.runs/impl*/*.txt
-*.runs/impl*/*.sh
-*.runs/impl*/*.tcl
-*.runs/impl*/*.bat
-!*.runs/impl*/*utilization*.rpt
-
-### block design
-*/*/bd/*/hdl
-*/*/*/bd/*/hdl
-
-*/*/bd/*/*.xdc
-*/*/*/bd/*/*.xdc
-
-*/*/bd/*/ip/*/*.xdc
-*/*/*/bd/*/ip/*/*.xdc
-
-*/*/bd/*/ip/*/*/
-*/*/*/bd/*/ip/*/*/
-
-*/*/bd/*/ip/*/*.vhd
-*/*/*/bd/*/ip/*/*.vhd
-
-*/*/bd/*/ip/*/*.xml
-*/*/*/bd/*/ip/*/*.xml
-
-*.c
-*.h
-*.vho
-*.html
-*/*/bd/*/ip/*/*.tcl
-*/*/*/bd/*/ip/*/*.tcl
-hw_handoff
-ipshared
-
-### Waf template
-# For projects that use the Waf build system: https://waf.io/
-# Dot-hidden on Unix-like systems
-.waf-*-*/
-.waf3-*-*/
-# Hidden directory on Windows (no dot)
-waf-*-*/
-waf3-*-*/
-# Lockfile
-.lock-waf_*_build
-
-### ReScript template
-/node_modules/
-/lib/
-.bsb.lock
-
-### Alteryx template
-# gitignore template for Alteryx Designer
-# website: https://www.alteryx.com/
-# website: https://help.alteryx.com/current/designer/alteryx-file-types
-
-# Alteryx Data Files
-*.yxdb
-*.cydb
-*.cyidx
-*.rptx
-*.vvf
-*.aws
-
-# Alteryx Special Files
-*.yxwv
-*.yxft
-*.yxbe
-*.bak
-*.pcxml
-*.log
-*.bin
-*.yxlang
-CASS.ini
-
-# Alteryx License Files
-*.yxlc
-*.slc
-*.cylc
-*.alc
-*.gzlc
-
-## gitignore reference sites
-# https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files
-# https://git-scm.com/docs/gitignore
-# https://help.github.com/articles/ignoring-files/
-
-## Useful knowledge from stackoverflow
-# Even if you haven't tracked the files so far, git seems to be able to "know" about them even after you add them to .gitignore.
-# WARNING: First commit your current changes, or you will lose them.
-# Then run the following commands from the top folder of your git repo:
-# git rm -r --cached .
-# git add .
-# git commit -m "fixed untracked files"
-
-# author: Kacper Ksieski
-### AutoIt template
-# Compiled Scripts
-*.a3x
-
-# Tidy Auto-Generated Backups
-Backup/*
-
-# Au3Stripper Auto-Generated Files
-*_stripped.au3
-
-### Laravel template
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
-
-### Processing template
-.DS_Store
-applet
-application.linux-arm64
-application.linux-armv6hf
-application.linux32
-application.linux64
-application.windows32
-application.windows64
-application.macosx
-out
-
-### Smalltalk template
-# changes file
-*.changes
-*.chg
-
-# system image
-*.image
-*.img7
-*.img
-
-# Pharo Smalltalk Debug log file
-PharoDebug.log
-
-# Squeak Smalltalk Debug log file
-SqueakDebug.log
-
-# Dolphin Smalltalk source file
-*.sml
-
-# Dolphin Smalltalk error file
-*.errors
-
-# Monticello package cache
-/package-cache
-
-# playground cache
-/play-cache
-/play-stash
-
-# Metacello-github cache
-/github-cache
-github-*.zip
-
-### Phoenix template
-# gitignore template for Phoenix projects
-# website: http://www.phoenixframework.org/
-#
-# Recommended template: Elixir.gitignore
-
-# Temporary files
-/tmp
-
-# Static artifacts
-/node_modules
-/assets/node_modules
-
-# Since we are building assets from web/static,
-# we ignore priv/static. You may want to comment
-# this depending on your deployment strategy.
-/priv/static/
-
-# Installer-related files
-/installer/_build
-/installer/tmp
-/installer/doc
-/installer/deps
-
-### SeamGen template
-/bootstrap/data
-/bootstrap/tmp
-/classes/
-/dist/
-/exploded-archives/
-/test-build/
-/test-output/
-/test-report/
-/target/
-temp-testng-customsuite.xml
-
-# based on http://stackoverflow.com/a/8865858/422476 I am removing inline comments
-
-#/classes/  		              all class files
-#/dist/                       contains generated war files for deployment
-#/exploded-archives/		      war content generation during deploy (or explode)
-#/test-build/                 test compilation (ant target for Seam)
-#/test-output/                test results
-#/test-report/                test report generation for, e.g., Hudson
-#/target/                     maven output folder
-#temp-testng-customsuite.xml	generated when running test cases under Eclipse
-
-# Thanks to @VonC and @kraftan for their helpful answers on a related question
-# on StackOverflow.com:
-# http://stackoverflow.com/questions/4176687
-# /what-is-the-recommended-source-control-ignore-pattern-for-seam-projects
-
-### Scrivener template
-*/Files/binder.autosave
-*/Files/binder.backup
-*/Files/search.indexes
-*/Files/user.lock
-*/Files/Docs/docs.checksum
-*/Files/Data/docs.checksum
-*/QuickLook/
-*/Settings/ui.plist
-
-### C++ template
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-### JBoss template
-jboss/server/all/deploy/project.ext
-jboss/server/default/deploy/project.ext
-jboss/server/minimal/deploy/project.ext
-jboss/server/all/log/*.log
-jboss/server/all/tmp/**/*
-jboss/server/all/data/**/*
-jboss/server/all/work/**/*
-jboss/server/default/log/*.log
-jboss/server/default/tmp/**/*
-jboss/server/default/data/**/*
-jboss/server/default/work/**/*
-jboss/server/minimal/log/*.log
-jboss/server/minimal/tmp/**/*
-jboss/server/minimal/data/**/*
-jboss/server/minimal/work/**/*
-
-# deployed package files #
-
-*.DEPLOYED
-
-### Meteor template
-# gitignore template for the Meteor framework
-# website: https://www.meteor.com/
-#
-# Recommended template: Node.gitignore
-
-# protect api keys in setting json
-settings-production.json
-settings.json
-
-# protect your mup.json settings
-mup.json
-mup.js
-
-### CraftCMS template
-# Craft 2 Storage (https://craftcms.com/support/craft-storage-gitignore)
-# not necessary for Craft 3 (https://github.com/craftcms/craft/issues/26)
-/craft/storage/*
-!/craft/storage/rebrand
-
-### Concrete5 template
-# ignore the error log and .htaccess and others
-error_log
-.htaccess
-
-# concrete5 5.6 specific
-
-config/site.php
-files/cache/*
-files/tmp/*
-
-# concrete5 5.7 specific
-
-# ignore everything but the index.html
-/application/files/*
-!/application/files/index.html
-
-# ignore updates folder
-/updates/*
-
-# ignore sitemap.xml
-/sitemap.xml
-
-### Autotools template
-# http://www.gnu.org/software/automake
-
-Makefile.in
-/ar-lib
-/mdate-sh
-/py-compile
-/test-driver
-/ylwrap
-.deps/
-.dirstamp
-
-# http://www.gnu.org/software/autoconf
-
-autom4te.cache
-/autoscan.log
-/autoscan-*.log
-/aclocal.m4
-/compile
-/config.cache
-/config.guess
-/config.h.in
-/config.log
-/config.status
-/config.sub
-/configure
-/configure.scan
-/depcomp
-/install-sh
-/missing
-/stamp-h1
-
-# https://www.gnu.org/software/libtool/
-
-/ltmain.sh
-
-# http://www.gnu.org/software/texinfo
-
-/texinfo.tex
-
-# http://www.gnu.org/software/m4/
-
-m4/libtool.m4
-m4/ltoptions.m4
-m4/ltsugar.m4
-m4/ltversion.m4
-m4/lt~obsolete.m4
-
-# Generated Makefile
-# (meta build system like autotools,
-# can automatically generate from config.status script
-# (which is called by configure script))
-Makefile
-
-### Hexo template
-# gitignore template for Hexo sites
-# website: https://hexo.io/
-# Recommended: Node.gitignore
-
-# Ignore generated directory
-public/
-
-# Ignore temp files
-tmp/
-.tmp*
-
-# additional files
-db.json
-.deploy*/
-
-### NWjs template
-# gitignore template for NW.js projects
-# website: https://nwjs.io/
-
-# Seen in standard and sdk versions
-credits.html
-locales/
-libEGL.dll
-libGLEv2.dll
-node.dll
-nw.dll
-nw.exe
-natives_blob.bin
-nw_100_percent.pak
-nw_200_percent.pak
-nw_elf.dll
-snapshot_blob.bin
-resources.pak
-
-# Seen only in standard
-d3dcompiler_47.dll
-ffmpeg.dll
-icudtl.dat
-
-# Seen only in sdk
-pnacl/
-chromedriver.exe
-nacl_irt_x86_64.nexe
-nwjc.exe
-payload.exe
-
-### Hugo template
-# Generated files by hugo
-/public/
-/resources/_gen/
-/assets/jsconfig.json
-hugo_stats.json
-
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
-
-# Temporary lock file while building
-/.hugo_build.lock
-
-### NasaSpecsIntact template
-# gitignore template for Nasa SpecsIntact (SI)
-# Website: https://specsintact.ksc.nasa.gov/
-#
-# Recommended:
-# MicrosoftOffice.gitignore
-#
-
-# SpecsIntact (SI) Locking file; this would lock everyone out.
-*.se$
-
-# SI Reports; auto-generated. They do not belong in the repository
-# as they will be re-created exactly when using a specific checkout point.
-*.RPT
-ADDRVER.*
-BRKTVER.*
-DUPEREF.*
-REFVER.*
-SECTVER.*
-SUBMVER.*
-TTLDIFFS.*
-
-# SpecsIntact files that change a lot and don't actually affect SI
-# PULL.TBL is an auto-generated file to help speed SI loading.
-PULL.TBL
-pulltbl.bck
-
-# Tailoring information.
-# Keep tailor.tag; it is a list of tailoring options in SI.
-
-# JOB.OTL informs SI where a spec section came from.
-# Keeping the old one isn't useful in git.
-JOB.OTL.OLD
-
-# OneNote TOC Files; SI Work Directories may be installed in a location co-located with OneNote
-# notebooks, and if so, OneNote will litter the SI folder with these.
-*.onetoc*
-
-# Log files, typically tagfix or other auto generated logs that aren't useful
-# outside of the user that made them and clutter up the index.
-*.log
-
-### Zig template
-.zig-cache/
-zig-out/
-
-### Splunk template
-# gitignore template for Splunk apps
-# documentation: http://docs.splunk.com/Documentation/Splunk/6.2.3/admin/Defaultmetaconf
-
-# Splunk local meta file
-local.meta
-
-# Splunk local folder
-local
-
-### Cordova template
-# gitignore template for the Cordova framework
-# website: https://cordova.apache.org/
-#
-# Recommended template: Node.gitignore
-
-# App platform binaries and built files
-/platforms
-
-# Optional to ignore plugin Git clones
-#/plugins
-
-### Mercury template
-Mercury/
-Mercury.modules
-*.mh
-*.err
-*.init
-*.dll
-*.exe
-*.a
-*.so
-*.dylib
-*.beams
-*.d
-*.c_date
-
-### LabVIEW template
-# Libraries
-*.lvlibp
-*.llb
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-
-# Metadata
-*.aliases
-*.lvlps
-.cache/
-
-### Maven template
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
-
-# Eclipse m2e generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
-
-### CMake template
-CMakeLists.txt.user
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps
-CMakeUserPresets.json
-
-### Magento2 template
-/sitemap
-/sitemap.xml
-/pub/sitemap
-/pub/sitemap.xml
-/app/config_sandbox
-/app/etc/config.php
-/app/etc/env.php
-/app/code/Magento/TestModule*
-/lib/internal/flex/uploader/.actionScriptProperties
-/lib/internal/flex/uploader/.flexProperties
-/lib/internal/flex/uploader/.project
-/lib/internal/flex/uploader/.settings
-/lib/internal/flex/varien/.actionScriptProperties
-/lib/internal/flex/varien/.flexLibProperties
-/lib/internal/flex/varien/.project
-/lib/internal/flex/varien/.settings
-/.grunt
-/.php_cs.cache
-/grunt-config.json
-/dev/tools/grunt/configs/local-themes.js
-
-/pub/media/*.*
-!/pub/media/.htaccess
-/pub/media/attribute/*
-!/pub/media/attribute/.htaccess
-/pub/media/analytics/*
-/pub/media/catalog/*
-!/pub/media/catalog/.htaccess
-/pub/media/customer/*
-!/pub/media/customer/.htaccess
-/pub/media/downloadable/*
-!/pub/media/downloadable/.htaccess
-/pub/media/favicon/*
-/pub/media/import/*
-!/pub/media/import/.htaccess
-/pub/media/logo/*
-/pub/media/theme/*
-/pub/media/theme_customization/*
-!/pub/media/theme_customization/.htaccess
-/pub/media/wysiwyg/*
-!/pub/media/wysiwyg/.htaccess
-/pub/media/tmp/*
-!/pub/media/tmp/.htaccess
-/pub/media/captcha/*
-!/pub/media/captcha/.htaccess
-/pub/static/*
-!/pub/static/.htaccess
-
-/var/*
-!/var/.htaccess
-/vendor/*
-!/vendor/.htaccess
-/generated/*
-!/generated/.htaccess
-
-### Magento1 template
-# gitignore template for Magento v1 projects
-#
-# It is recommended that you use `Magento.gitignore` as this is the latest version
-
-/PATCH_*.sh
-
-/app/etc/local.xml
-
-/media/*
-!/media/.htaccess
-
-!/media/customer
-/media/customer/*
-!/media/customer/.htaccess
-
-!/media/dhl
-/media/dhl/*
-!/media/dhl/logo.jpg
-
-!/media/downloadable
-/media/downloadable/*
-!/media/downloadable/.htaccess
-
-!/media/xmlconnect
-/media/xmlconnect/*
-
-!/media/xmlconnect/custom
-/media/xmlconnect/custom/*
-!/media/xmlconnect/custom/ok.gif
-
-!/media/xmlconnect/original
-/media/xmlconnect/original/*
-!/media/xmlconnect/original/ok.gif
-
-!/media/xmlconnect/system
-/media/xmlconnect/system/*
-!/media/xmlconnect/system/ok.gif
-
-/var/*
-!/var/.htaccess
-
-!/var/package
-/var/package/*
-!/var/package/*.xml
-
-
-### Go template
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
-go.work.sum
-
-# env file
-.env
-
-### Terragrunt template
-# Ignore the default terragrunt cache directory
-# https://terragrunt.gruntwork.io/docs/features/caching/
-.terragrunt-cache
-
-### RhodesRhomobile template
-rholog-*
-sim-*
-bin/libs
-bin/RhoBundle
-bin/tmp
-bin/target
-bin/*.ap_
-*.o
-*.jar
-
-### FlaxEngine template
-# Ignore Flax project files
-Binaries/
-Cache/
-Logs/
-Output/
-Screenshots/
-*.HotReload.*
-
-# Ignore Visual Studio project files (generated locally)
-*.csproj
-*.sln
-
-# Ignore thumbnails created by Windows
-Thumbs.db
-
-# Ignore files built by Visual Studio
-*.obj
-*.exe
-*.pdb
-*.user
-*.aps
-*.pch
-*.vspscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.cache
-*.ilk
-*.log
-[Bb]in
-[Dd]ebug*/
-*.lib
-*.sbr
-obj/
-[Rr]elease*/
-_ReSharper*/
-[Tt]est[Rr]esult*
-.vs/
-
-# Ignore Nuget packages folder
-packages/
-
-### OpenCart template
-.htaccess
-/config.php
-admin/config.php
-
-!index.html
-
-download/
-image/data/
-image/cache/
-system/cache/
-system/logs/
-
-system/storage/
-
-# vQmod log files
-vqmod/logs/*
-# vQmod cache files
-vqmod/vqcache/*
-vqmod/checked.cache
-vqmod/mods.cache
-
-### OCaml template
-*.annot
-*.cmo
-*.cma
-*.cmi
-*.a
-*.o
-*.cmx
-*.cmxs
-*.cmxa
-
-# ocamlbuild working directory
-_build/
-
-# ocamlbuild targets
-*.byte
-*.native
-
-# oasis generated files
-setup.data
-setup.log
-
-# Merlin configuring file for Vim and Emacs
-.merlin
-
-# Dune generated files
-*.install
-
-# Local OPAM switch
-_opam/
-
-### Haskell template
-dist
-dist-*
-cabal-dev
-*.o
-*.hi
-*.hie
-*.chi
-*.chs.h
-*.dyn_o
-*.dyn_hi
-.hpc
-.hsenv
-.cabal-sandbox/
-cabal.sandbox.config
-*.prof
-*.aux
-*.hp
-*.eventlog
-.stack-work/
-cabal.project.local
-cabal.project.local~
-.HTF/
-.ghc.environment.*
-
-### ROS2 template
-install/
-log/
-build/
-
-# Ignore generated docs
-*.dox
-*.wikidoc
-
-# eclipse stuff
-.project
-.cproject
-
-# qcreator stuff
-CMakeLists.txt.user
-
-srv/_*.py
-*.pcd
-*.pyc
-qtcreator-*
-*.user
-
-*~
-
-# Emacs
-.#*
-
-# Colcon custom files
-COLCON_IGNORE
-AMENT_IGNORE
-
-### Prestashop template
-# Cache, temp and personal files
-
-/.htaccess
-*.log
-
-# Cache
-/cache/*
-!/cache/.htaccess
-!/cache/cachefs/index.php
-!/cache/deprecated.txt
-!/cache/index.php
-!/cache/purifier/index.php
-!/cache/push/activity
-!/cache/push/index.php
-!/cache/push/trends
-!/cache/sandbox/index.php
-!/cache/smarty/cache/index.php
-!/cache/smarty/compile/index.php
-!/cache/smarty/index.php
-!/cache/tcpdf/index.php
-
-# Download
-/download/*
-!/download/.htaccess
-!/download/index.php
-
-# Images
-/img/*
-!/img/.htaccess
-!/img/index.php
-!/img/404.gif
-!/img/bg_500.png
-!/img/bg_loader.png
-!/img/favicon.ico
-!/img/loader.gif
-!/img/loadingAnimation.gif
-!/img/logo.jpg
-!/img/logo.png
-!/img/logo_invoice.jpg
-!/img/logo_stores.png
-!/img/macFFBgHack.png
-!/img/prestashop-avatar.png
-!/img/prestashop@2x.png
-!/img/preston-login-wink@2x.png
-!/img/preston-login@2x.png
-!/img/questionmark.png
-!/img/genders/index.php
-!/img/admin/index.php
-!/img/c/index.php
-!/img/cms/index.php
-!/img/co/index.php
-!/img/jquery-ui
-!/img/l/index.php
-!/img/m/index.php
-!/img/os/index.php
-!/img/p/index.php
-!/img/s/index.php
-!/img/scenes
-!/img/st/index.php
-!/img/su/index.php
-!/img/t/index.php
-!/img/tmp/index.php
-
-# Upload
-/upload/*
-!/upload/.htaccess
-
-/vendor/*
-/docs/phpdoc-sf/
-/composer.lock
-*.hot-update.js
-*.hot-update.json
-
-
-/admin-dev/autoupgrade/*
-!/admin-dev/autoupgrade/index.php
-!/admin-dev/autoupgrade/backup/index.php
-
-/admin-dev/backups/*
-!/admin-dev/backups/.htaccess
-
-/admin-dev/import/*
-!/admin-dev/import/.htaccess
-!/admin-dev/import/index.php
-
-/admin-dev/export/*
-!/admin-dev/export/.htaccess
-!/admin-dev/export/index.php
-
-# Downloaded RTL files
-/admin-dev/themes/default/css/bundle/default_rtl.css
-/admin-dev/themes/default/css/bundle/shared_rtl.css
-/admin-dev/themes/default/css/font_rtl.css
-/admin-dev/themes/default/css/overrides_rtl.css
-/admin-dev/themes/default/css/vendor/font-awesome/font-awesome_rtl.css
-/admin-dev/themes/default/css/vendor/nv.d3_rtl.css
-/admin-dev/themes/default/css/vendor/titatoggle-min_rtl.css
-/admin-dev/themes/default/public/theme_rtl.css
-/admin-dev/themes/new-theme/css/module/drop_rtl.css
-/admin-dev/themes/new-theme/css/right-sidebar_rtl.css
-
-themes/*/cache/*
-
-# Config
-
-config/settings.inc.php
-config/settings.old.php
-config/xml/*
-config/themes/*
-!config/xml/themes/default.xml
-themes/*/config/settings_*.json
-app/config/parameters.old.yml
-app/config/config.php
-
-# Themes, modules and overrides
-
-modules/*
-override/*
-themes/*/
-!themes/classic
-!themes/_core
-!themes/_libraries
-
-# Vendors and dependencies
-
-bower_components/
-node_modules/
-composer.phar
-php-cs-fixer
-.grunt/*
-
-# Translations and emails templates
-
-translations/*
-mails/*
-!mails/themes/
-!mails/_partials/
-themes/default-bootstrap/lang/*
-themes/default-bootstrap/modules/*/translations/*.php
-themes/default-bootstrap/mails/*
-!themes/default-bootstrap/mails/en/
-themes/default-bootstrap/modules/*/mails/*
-!themes/default-bootstrap/modules/*/mails/en
-
-# MISC
-
-*sitemap.xml
-/robots.txt
-
-# Symfony
-
-/bin/
-/app/Resources/geoip/GeoLite2-City.mmdb
-/app/Resources/translations/*
-!/app/Resources/translations/default
-/app/config/parameters.yml
-/app/config/parameters.php
-/build/
-/phpunit.xml
-/var/*
-!/var/cache
-/var/cache/*
-!var/cache/.gitkeep
-!/var/logs
-/var/logs/*
-!var/logs/.gitkeep
-!/var/sessions
-/var/sessions/*
-!var/sessions/.gitkeep
-!var/SymfonyRequirements.php
-/vendor/
-/web/bundles/
-
-
-### Toit template
-.packages
-*_pb.toit
-
-### Nikola template
-# gitignore template for Nikola static site generator
-# website: https://getnikola.com/
-
-.doit.db
-*.py[cod]
-cache/
-output/
-
-### Perl template
-!Build/
-.last_cover_stats
-/META.yml
-/META.json
-/MYMETA.*
-*.o
-*.pm.tdy
-*.bs
-
-# Devel::Cover
-cover_db/
-
-# Devel::NYTProf
-nytprof.out
-
-# Dist::Zilla
-/.build/
-
-# Module::Build
-_build/
-Build
-Build.bat
-
-# Module::Install
-inc/
-
-# ExtUtils::MakeMaker
-/blib/
-/_eumm/
-/*.gz
-/Makefile
-/Makefile.old
-/MANIFEST.bak
-/pm_to_blib
-/*.zip
-
-### JENKINS_HOME template
-# Learn more about Jenkins and JENKINS_HOME directory for which this file is
-# intended.
-#
-#  http://jenkins-ci.org/
-#  https://wiki.jenkins-ci.org/display/JENKINS/Administering+Jenkins
-#
-# Note: secret.key is purposefully not tracked by git. This should be backed up
-# separately because configs may contain secrets which were encrypted using the
-# secret.key.  To back up secrets use 'tar -czf /tmp/secrets.tgz secret*' and
-# save the file separate from your repository.  If you want secrets backed up
-# with configuration, then see the bottom of this file for an example.
-
-# Ignore all JENKINS_HOME except jobs directory, root xml config, and
-# .gitignore file.
-/*
-!/jobs
-!/.gitignore
-!/*.xml
-
-# Ignore all files in jobs subdirectories except for folders.
-# Note: git doesn't track folders, only file content.
-jobs/**
-!jobs/**/
-
-# Uncomment the following line to save next build numbers with config.
-
-#!jobs/**/nextBuildNumber
-
-# For performance reasons, we want to ignore builds in Jenkins jobs because it
-# contains many tiny files on large installations.  This can impact git
-# performance when running even basic commands like 'git status'.
-builds
-indexing
-
-# Exclude only config.xml files in repository subdirectories.
-!config.xml
-
-# Don't track workspaces (when users build on the master).
-jobs/**/*workspace
-
-# Security warning: If secrets are included with your configuration, then an
-# adversary will be able to decrypt all encrypted secrets within Jenkins
-# config.  Including secrets is a bad practice, but the example is included in
-# case someone still wants it for convenience.  Uncomment the following line to
-# include secrets for decryption with repository configuration in Git.
-
-#!/secret*
-
-# As a result, only Jenkins settings and job config.xml files in JENKINS_HOME
-# will be tracked by git.
-
-### ExtJs template
-.architect
-bootstrap.css
-bootstrap.js
-bootstrap.json
-bootstrap.jsonp
-build/
-classic.json
-classic.jsonp
-ext/
-modern.json
-modern.jsonp
-resources/sass/.sass-cache/
-resources/.arch-internal-preview.css
-.arch-internal-preview.css
-
-### Drupal template
-# gitignore template for Drupal 8 projects
-#
-# earlier versions of Drupal are tracked in `community/PHP/`
-#
-# follows official upstream conventions:
-# https://www.drupal.org/docs/develop/using-composer
-
-# Ignore configuration files that may contain sensitive information
-/web/sites/*/*settings*.php
-/web/sites/*/*services*.yml
-
-# Ignore paths that may contain user-generated content
-/web/sites/*/files
-/web/sites/*/public
-/web/sites/*/private
-/web/sites/*/files-public
-/web/sites/*/files-private
-
-# Ignore paths that may contain temporary files
-/web/sites/*/translations
-/web/sites/*/tmp
-/web/sites/*/cache
-
-# Ignore drupal core (if not versioning drupal sources)
-/web/vendor
-/web/core
-/web/modules/README.txt
-/web/profiles/README.txt
-/web/sites/development.services.yml
-/web/sites/example.settings.local.php
-/web/sites/example.sites.php
-/web/sites/README.txt
-/web/themes/README.txt
-/web/.csslintrc
-/web/.editorconfig
-/web/.eslintignore
-/web/.eslintrc.json
-/web/.gitattributes
-/web/.htaccess
-/web/.ht.router.php
-/web/autoload.php
-/web/composer.json
-/web/composer.lock
-/web/example.gitignore
-/web/index.php
-/web/INSTALL.txt
-/web/LICENSE.txt
-/web/README.txt
-/web/robots.txt
-/web/update.php
-/web/web.config
-
-# Ignore vendor dependencies and scripts
-/vendor
-/composer.phar
-/composer
-/robo.phar
-/robo
-/drush.phar
-/drush
-/drupal.phar
-/drupal
-
-### Yii template
-assets/*
-!assets/.gitignore
-protected/runtime/*
-!protected/runtime/.gitignore
-protected/data/*.db
-themes/classic/views/
-
-### AppEngine template
-# Google App Engine generated folder
-appengine-generated/
-
-### KiCad template
-# For PCBs designed using KiCad: https://www.kicad.org/
-# Format documentation: https://kicad.org/help/file-formats/
-
-# Temporary files
-*.000
-*.bak
-*.bck
-*.kicad_pcb-bak
-*.kicad_sch-bak
-*-backups
-*.kicad_prl
-*.sch-bak
-*~
-_autosave-*
-*.tmp
-*-save.pro
-*-save.kicad_pcb
-fp-info-cache
-~*.lck
-\#auto_saved_files#
-
-# Netlist files (exported from Eeschema)
-*.net
-
-# Autorouter files (exported from Pcbnew)
-*.dsn
-*.ses
-
-# Exported BOM files
-*.xml
-*.csv
-
-### Swift template
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## User settings
-xcuserdata/
-
-## Obj-C/Swift specific
-*.hmap
-
-## App packaging
-*.ipa
-*.dSYM.zip
-*.dSYM
-
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
-
-.build/
-
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build/
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
-
-### LemonStand template
-boot.php
-index.php
-install.php
-/config/*
-!/config/config.php
-/controllers/*
-/init/*
-/logs/*
-/phproad/*
-/temp/*
-/uploaded/*
-/installer_files/*
-/modules/backend/*
-/modules/blog/*
-/modules/cms/*
-/modules/core/*
-/modules/session/*
-/modules/shop/*
-/modules/system/*
-/modules/users/*
-# add content_*.php if you don't want erase client changes to content
-
-### Jekyll template
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-# Ignore folders generated by Bundler
-.bundle/
-vendor/
-
-### uVision template
-# git ignore file for Keil µVision Project
-
-# µVision 5 and µVision 4 Project screen layout file
-*.uvguix.*
-*.uvgui.*
-
-# Listing Files
-*.i
-*.lst
-*.m51
-*.m66
-*.map
-
-# Object Files
-*.axf
-*.b[0-2][0-9]
-*.b3[0-1]
-*.bak
-*.build_log.htm
-*.crf
-*.d
-*.dep
-*.elf
-*.htm
-*.iex
-*.lnp
-*.o
-*.obj
-*.sbr
-
-# Firmware Files
-*.bin
-*.h86
-*.hex
-
-# Build Files
-.bat
-
-# Debugger Files
-.ini
-
-# JLink Files
-JLinkLog.txt
-
-# Other Files
-
-### GitHubPages template
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
-
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
-
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
-
-### Drupal7 template
-# gitignore template for Drupal 7 projects
-#
-# It is recommended that you use `Drupal.gitignore` as this is the latest version
-
-# Ignore configuration files that may contain sensitive information.
-sites/*/*settings*.php
-sites/example.sites.php
-
-# Ignore paths that contain generated content.
-files/
-sites/*/files
-sites/*/private
-sites/*/translations
-
-# Ignore default text files
-robots.txt
-/CHANGELOG.txt
-/COPYRIGHT.txt
-/INSTALL*.txt
-/LICENSE.txt
-/MAINTAINERS.txt
-/UPGRADE.txt
-/README.txt
-sites/README.txt
-sites/all/libraries/README.txt
-sites/all/modules/README.txt
-sites/all/themes/README.txt
-
-# Ignore everything but the "sites" folder ( for non core developer )
-.htaccess
-web.config
-authorize.php
-cron.php
-index.php
-install.php
-update.php
-xmlrpc.php
-/includes
-/misc
-/modules
-/profiles
-/scripts
-/themes
-
-### Objective-C template
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## User settings
-xcuserdata/
-
-## Obj-C/Swift specific
-*.hmap
-
-## App packaging
-*.ipa
-*.dSYM.zip
-*.dSYM
-
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build/
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
-
-### Textpattern template
-.htaccess
-css.php
-rpc/
-sites/site*/admin/
-sites/site*/private/
-sites/site*/public/admin/
-sites/site*/public/setup/
-sites/site*/public/theme/
-textpattern/
-HISTORY.txt
-README.txt
-
-### Agda template
-*.agdai
-MAlonzo/**
-
-### Godot template
-# Godot 4+ specific ignores
-.godot/
-
-# Godot-specific ignores
-.import/
-export.cfg
-export_presets.cfg
-
-# Imported translations (automatically generated from CSV files)
-*.translation
-
-# Mono-specific ignores
-.mono/
-data_*/
-mono_crash.*.json
-
-### Composer template
-composer.phar
-/vendor/
-
-# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
-
-### Coq template
-.*.aux
-.*.d
-*.a
-*.cma
-*.cmi
-*.cmo
-*.cmx
-*.cmxa
-*.cmxs
-*.glob
-*.ml.d
-*.ml4.d
-*.mlg.d
-*.mli.d
-*.mllib.d
-*.mlpack.d
-*.native
-*.o
-*.v.d
-*.vio
-*.vo
-*.vok
-*.vos
-.coq-native
-.csdp.cache
-.lia.cache
-.nia.cache
-.nlia.cache
-.nra.cache
-csdp.cache
-lia.cache
-nia.cache
-nlia.cache
-nra.cache
-native_compute_profile_*.data
-
-# generated timing files
-*.timing.diff
-*.v.after-timing
-*.v.before-timing
-*.v.timing
-time-of-build-after.log
-time-of-build-before.log
-time-of-build-both.log
-time-of-build-pretty.log
-
-### GWT template
-*.class
-
-# Package Files #
-*.jar
-*.war
-
-# gwt caches and compiled units #
-war/gwt_bree/
-gwt-unitCache/
-
-# boilerplate generated classes #
-.apt_generated/
-
-# more caches and things from deploy #
-war/WEB-INF/deploy/
-war/WEB-INF/classes/
-
-#compilation logs
-.gwt/
-
-#gwt junit compilation files
-www-test/
-
-#old GWT (1.5) created this dir
-.gwt-tmp/
-
-### Vue template
-# gitignore template for Vue.js projects
-#
-# Recommended template: Node.gitignore
-
-# TODO: where does this rule come from?
-docs/_book
-
-# TODO: where does this rule come from?
-test/
-
-### Sass template
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
-
-### Kotlin template
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
-
-### Julia template
-# Files generated by invoking Julia with --code-coverage
-*.jl.cov
-*.jl.*.cov
-
-# Files generated by invoking Julia with --track-allocation
-*.jl.mem
-
-# System-specific files and directories generated by the BinaryProvider and BinDeps packages
-# They contain absolute paths specific to the host computer, and so should not be committed
-deps/deps.jl
-deps/build.log
-deps/downloads/
-deps/usr/
-deps/src/
-
-# Build artifacts for creating documentation generated by the Documenter package
-docs/build/
-docs/site/
-
-# File generated by Pkg, the package manager, based on a corresponding Project.toml
-# It records a fixed state of all packages used by the project. As such, it should not be
-# committed for packages, but should be committed for applications that require a static
-# environment.
-Manifest.toml
-
-### Puppet template
-# gitignore template for Puppet modules
-# website: https://forge.puppet.com/
-
-# Built packages
-pkg/*
-
-# Should run on multiple platforms so don't check in
-Gemfile.lock
-
-# Tests
-spec/fixtures/*
-coverage/*
-
-# Third-party
-vendor/*
-.bundle/*
-
-### IAR_EWARM template
-# gitignore template for the IAR EWARM
-# website: https://www.iar.com/knowledge/support/technical-notes/ide/which-files-should-be-version-controlled/
-
-# Some tools will put the EWARM files
-# under a subdirectory with the same name
-# as the configuration.
-# Example
-# EWARM/Config1/Obj /List /Exe
-# EWARM/Config2/Obj /List /Exe
-EWARM/**/Obj
-EWARM/**/List
-EWARM/**/Exe
-
-# Autogenerated project files
-*.dep
-*.ewt
-
-# Autogenerated folder for debugger
-EWARM/settings
-
-### Bitrix template
-# gitignore template for 1C-Bitrix, a PHP-based CMS
-# website: https://www.1c-bitrix.ru
-
-#Exclude all of core files
-/bitrix/*
-
-#But not the templates and non bitrix components
-!/bitrix/templates
-!/bitrix/components
-/bitrix/components/bitrix
-
-#Exclude bitrix gadgets
-!/bitrix/gadgets
-/bitrix/gadgets/bitrix
-
-#User can use that directory to store some stuff, but it's not really recommended, just use /local instead of this
-!/bitrix/php_interface/
-
-#Exclude database configs
-/bitrix/php_interface/dbconn.php
-
-#Exclude default file storage directory
-/upload/
 
 ### TurboGears2 template
 *.py[co]
@@ -4892,14 +3973,72 @@ pip-log.txt
 
 # Common configure file
 /Application/Common/Conf/config.php
-### Example user template template
-### Example user template
+### WordPress template
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
+wp-config.php
+
+# Example themes
+/wp-content/themes/twenty*/
+
+# Example plugin
+/wp-content/plugins/hello.php
+
+# Uploads
+/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes
+### Racket template
+.DS_Store
+compiled/
+/doc/
+*~
+*.bak
+\#*
+.\#*
+
+### SCons template
+# for projects that use SCons for building: http://http://www.scons.org/
+.sconsign.dblite
+
+# When configure fails, SCons outputs these
+config.log
+.sconf_temp
+
 ### Typo3 template
 ## TYPO3 v6.2
 # Ignore several upload and file directories.
@@ -5209,6 +4348,28 @@ cython_debug/
 # Undo-tree save-files
 *.~undo-tree
 
+### Fancy template
+*.rbc
+*.fyc
+
+### Finale template
+*.bak
+*.db
+*.avi
+*.pdf
+*.ps
+*.mid
+*.midi
+*.mp3
+*.aif
+*.wav
+# Some versions of Finale have a bug and randomly save extra copies of
+# the music source as "<Filename> copy.mus"
+*copy.mus
+
+### SketchUp template
+*.skb
+
 ### LensStudio template
 # gitignore template for LensStudio
 # website: https://lensstudio.snapchat.com/
@@ -5227,6 +4388,84 @@ __pycache__/
 *$py.class
 [Bb]ackup*
 
+### PureScript template
+# Dependencies
+.psci_modules
+.spago
+bower_components
+node_modules
+
+# Generated files
+.psci
+output
+
+### EPiServer template
+######################
+## EPiServer Files
+######################
+*License.config
+
+### Grails template
+# .gitignore for Grails 1.2 and 1.3
+# Although this should work for most versions of grails, it is
+# suggested that you use the "grails integrate-with --git" command
+# to generate your .gitignore file.
+
+# web application files
+/web-app/WEB-INF/classes
+
+# default HSQL database files for production mode
+/prodDb.*
+
+# general HSQL database files
+*Db.properties
+*Db.script
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+
+# project release file
+/*.war
+
+# plugin release files
+/*.zip
+/plugin.xml
+
+# older plugin install locations
+/plugins
+/web-app/plugins
+
+# "temporary" build files
+/target
+
+### ZendFramework template
+# Composer files
+composer.phar
+vendor/
+
+# Local configs
+config/autoload/*.local.php
+
+# Binary gettext files
+*.mo
+
+# Data
+data/logs/
+data/cache/
+data/sessions/
+data/tmp/
+temp/
+
+#Doctrine 2
+data/DoctrineORMModule/Proxy/
+data/DoctrineORMModule/cache/
+
+# Legacy ZF1
+demos/
+extras/documentation
+
 ### VVVV template
 
 # .v4p backup files
@@ -5234,6 +4473,10 @@ __pycache__/
 
 # Dynamic plugins .dll
 bin/
+
+### Phalcon template
+/cache/
+/config/development/
 
 ### Qooxdoo template
 cache
@@ -5276,6 +4519,78 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+### Gretl template
+# gitignore template for Gretl
+# website: http://gretl.sourceforge.net/
+
+# Auto-generated log file is overwritten whenever you start a new session
+session.inp
+
+# Auto-generated temporary string code table
+string_table.txt
+
+### Lilypond template
+*.pdf
+*.ps
+*.midi
+*.mid
+*.log
+*~
+
+### OpenSSL template
+# OpenSSL-related files best not committed
+
+## Certificate Authority
+*.ca
+
+## Certificate
+*.crt
+
+## Certificate Sign Request
+*.csr
+
+## Certificate
+*.der
+
+## Key database file
+*.kdb
+
+## OSCP request data
+*.org
+
+## PKCS #12
+*.p12
+
+## PEM-encoded certificate data
+*.pem
+
+## Random number seed
+*.rnd
+
+## SSLeay data
+*.ssleay
+
+## S/MIME message
+*.smime
+
+### Packer template
+# Cache objects
+packer_cache/
+
+# Crash log
+crash.log
+
+# https://www.packer.io/guides/hcl/variables
+# Exclude all .pkrvars.hcl files, which are likely to contain sensitive data,
+# such as password, private keys, and other secrets. These should not be part of
+# version control as they are data points which are potentially sensitive and
+# subject to change depending on the environment.
+#
+*.pkrvars.hcl
+
+# For built boxes
+*.box
 
 ### Rails template
 *.rbc
@@ -5388,6 +4703,14 @@ msbuild.wrn
 .vs/
 
 
+### esp-idf template
+# gitignore template for esp-idf, the official development framework for ESP32
+# https://github.com/espressif/esp-idf
+
+build/
+sdkconfig
+sdkconfig.old
+
 ### Unity template
 # This .gitignore file should be placed at the root of your Unity project directory
 #
@@ -5462,6 +4785,26 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+### CodeIgniter template
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!system/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+#codeigniter 3
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+/vendor/
+
 ### SymphonyCMS template
 manifest/cache/
 manifest/logs/
@@ -5469,6 +4812,29 @@ manifest/tmp/
 symphony/
 workspace/uploads/
 install-log.txt
+
+### Xojo template
+# Xojo (formerly REALbasic and Real Studio)
+
+Builds*
+*.debug
+*.debug.app
+Debug*.exe
+Debug*/Debug*.exe
+Debug*/Debug*\ Libs
+*.rbuistate
+*.xojo_uistate
+*.obsolete*
+
+### Sdcc template
+# SDCC stuff
+*.lnk
+*.lst
+*.map
+*.mem
+*.rel
+*.rst
+*.sym
 
 ### ROS template
 devel/
@@ -5554,6 +4920,129 @@ ext/mkinstalldirs
 ext/run-tests.php
 ext/.deps
 ext/libtool
+
+### Xilinx template
+# gitignore template for Xilinx Vivado Design Suite
+# website: https://www.xilinx.com/support/download.html
+
+# [home]
+*.jou
+*.log
+*.debug
+*.str
+*.zip
+*.tmp
+*.rst
+*.os
+*.js
+*.pb
+*.dcp
+*.hwdef
+*.vds
+*.veo
+*.wdf
+*.vdi
+*.dmp
+*.rpx
+*.rpt
+*_stub.v
+*_stub.vhdl
+*_funcsim.v
+*_funcsim.vhdl
+.project
+
+# [dir]
+*.cache
+.metadata
+*.data
+*.ipdefs
+.Xil
+*.sdk
+*.hw
+*.ip_user_files
+
+### IP synth
+*_synth_*
+
+.jobs
+
+### project synth
+*/*.runs/synth*/*.xml
+*/*.runs/synth*/*.txt
+*/*.runs/synth*/*.sh
+*/*.runs/synth*/*.tcl
+*/*.runs/synth*/*.bat
+*/*.runs/synth*/*.xdc
+!*/*.runs/synth*/*utilization*.rpt
+
+*.runs/synth*/*.xml
+*.runs/synth*/*.txt
+*.runs/synth*/*.sh
+*.runs/synth*/*.tcl
+*.runs/synth*/*.bat
+*.runs/synth*/*.xdc
+!*.runs/synth*/*utilization*.rpt
+
+### project impl
+*/*.runs/impl*/*.xml
+*/*.runs/impl*/*.html
+*/*.runs/impl*/*.txt
+*/*.runs/impl*/*.sh
+*/*.runs/impl*/*.tcl
+*/*.runs/impl*/*.bat
+!*/*.runs/impl*/*utilization*.rpt
+
+*.runs/impl*/*.xml
+*.runs/impl*/*.html
+*.runs/impl*/*.txt
+*.runs/impl*/*.sh
+*.runs/impl*/*.tcl
+*.runs/impl*/*.bat
+!*.runs/impl*/*utilization*.rpt
+
+### block design
+*/*/bd/*/hdl
+*/*/*/bd/*/hdl
+
+*/*/bd/*/*.xdc
+*/*/*/bd/*/*.xdc
+
+*/*/bd/*/ip/*/*.xdc
+*/*/*/bd/*/ip/*/*.xdc
+
+*/*/bd/*/ip/*/*/
+*/*/*/bd/*/ip/*/*/
+
+*/*/bd/*/ip/*/*.vhd
+*/*/*/bd/*/ip/*/*.vhd
+
+*/*/bd/*/ip/*/*.xml
+*/*/*/bd/*/ip/*/*.xml
+
+*.c
+*.h
+*.vho
+*.html
+*/*/bd/*/ip/*/*.tcl
+*/*/*/bd/*/ip/*/*.tcl
+hw_handoff
+ipshared
+
+### Waf template
+# For projects that use the Waf build system: https://waf.io/
+# Dot-hidden on Unix-like systems
+.waf-*-*/
+.waf3-*-*/
+# Hidden directory on Windows (no dot)
+waf-*-*/
+waf3-*-*/
+# Lockfile
+.lock-waf_*_build
+
+### ReScript template
+/node_modules/
+/lib/
+.bsb.lock
 
 ### SAM template
 # gitignore template for AWS Serverless Application Model project
@@ -5682,6 +5171,51 @@ ConnectionStrings.config
 # Project media libraries (recommend shared file storage)
 # e.g. CMS/{SiteCodeName}
 
+### Alteryx template
+# gitignore template for Alteryx Designer
+# website: https://www.alteryx.com/
+# website: https://help.alteryx.com/current/designer/alteryx-file-types
+
+# Alteryx Data Files
+*.yxdb
+*.cydb
+*.cyidx
+*.rptx
+*.vvf
+*.aws
+
+# Alteryx Special Files
+*.yxwv
+*.yxft
+*.yxbe
+*.bak
+*.pcxml
+*.log
+*.bin
+*.yxlang
+CASS.ini
+
+# Alteryx License Files
+*.yxlc
+*.slc
+*.cylc
+*.alc
+*.gzlc
+
+## gitignore reference sites
+# https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files
+# https://git-scm.com/docs/gitignore
+# https://help.github.com/articles/ignoring-files/
+
+## Useful knowledge from stackoverflow
+# Even if you haven't tracked the files so far, git seems to be able to "know" about them even after you add them to .gitignore.
+# WARNING: First commit your current changes, or you will lose them.
+# Then run the following commands from the top folder of your git repo:
+# git rm -r --cached .
+# git add .
+# git commit -m "fixed untracked files"
+
+# author: Kacper Ksieski
 ### InforCMS template
 # gitignore template for InforCRM (formerly SalesLogix)
 # website: https://www.infor.com/product-summary/cx/infor-crm/
@@ -5699,6 +5233,41 @@ ExportedFiles.xml
 !Model/Portal/*/SupportFiles/[Bb]in/
 !Model/Portal/PortalTemplates/*/SupportFiles/[Bb]in
 
+### AutoIt template
+# Compiled Scripts
+*.a3x
+
+# Tidy Auto-Generated Backups
+Backup/*
+
+# Au3Stripper Auto-Generated Files
+*_stripped.au3
+
+### Laravel template
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+
 ### Snap template
 # gitginore template for creating Snap packages
 # website: https://snapcraft.io/
@@ -5714,6 +5283,18 @@ stage/
 
 # Source archive packed by `snapcraft cleanbuild` before pushing to the LXD container
 /*_source.tar.bz2
+
+### Processing template
+.DS_Store
+applet
+application.linux-arm64
+application.linux-armv6hf
+application.linux32
+application.linux64
+application.windows32
+application.windows64
+application.macosx
+out
 
 ### AltiumDesigner template
 # For PCBs designed using Altium Designer
@@ -5736,6 +5317,39 @@ Status\ Report.txt
 
 # Lock files sometimes left behind
 .~lock.*
+
+### Smalltalk template
+# changes file
+*.changes
+*.chg
+
+# system image
+*.image
+*.img7
+*.img
+
+# Pharo Smalltalk Debug log file
+PharoDebug.log
+
+# Squeak Smalltalk Debug log file
+SqueakDebug.log
+
+# Dolphin Smalltalk source file
+*.sml
+
+# Dolphin Smalltalk error file
+*.errors
+
+# Monticello package cache
+/package-cache
+
+# playground cache
+/play-cache
+/play-stash
+
+# Metacello-github cache
+/github-cache
+github-*.zip
 
 ### ChefCookbook template
 .vagrant
@@ -5799,6 +5413,30 @@ luac.out
 *.hex
 
 
+### Phoenix template
+# gitignore template for Phoenix projects
+# website: http://www.phoenixframework.org/
+#
+# Recommended template: Elixir.gitignore
+
+# Temporary files
+/tmp
+
+# Static artifacts
+/node_modules
+/assets/node_modules
+
+# Since we are building assets from web/static,
+# we ignore priv/static. You may want to comment
+# this depending on your deployment strategy.
+/priv/static/
+
+# Installer-related files
+/installer/_build
+/installer/tmp
+/installer/doc
+/installer/deps
+
 ### CakePHP template
 # CakePHP 3
 
@@ -5825,6 +5463,34 @@ luac.out
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+
+### SeamGen template
+/bootstrap/data
+/bootstrap/tmp
+/classes/
+/dist/
+/exploded-archives/
+/test-build/
+/test-output/
+/test-report/
+/target/
+temp-testng-customsuite.xml
+
+# based on http://stackoverflow.com/a/8865858/422476 I am removing inline comments
+
+#/classes/  		              all class files
+#/dist/                       contains generated war files for deployment
+#/exploded-archives/		      war content generation during deploy (or explode)
+#/test-build/                 test compilation (ant target for Seam)
+#/test-output/                test results
+#/test-report/                test report generation for, e.g., Hudson
+#/target/                     maven output folder
+#temp-testng-customsuite.xml	generated when running test cases under Eclipse
+
+# Thanks to @VonC and @kraftan for their helpful answers on a related question
+# on StackOverflow.com:
+# http://stackoverflow.com/questions/4176687
+# /what-is-the-recommended-source-control-ignore-pattern-for-seam-projects
 
 ### Ruby template
 *.gem
@@ -5914,6 +5580,50 @@ thumbs/
 _thumbs/
 */expressionengine/cache/*
 
+### Scrivener template
+*/Files/binder.autosave
+*/Files/binder.backup
+*/Files/search.indexes
+*/Files/user.lock
+*/Files/Docs/docs.checksum
+*/Files/Data/docs.checksum
+*/QuickLook/
+*/Settings/ui.plist
+
+### C++ template
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
 ### OracleForms template
 # Compiled Form Modules
 *.fmx
@@ -5923,6 +5633,41 @@ _thumbs/
 
 # Compiled Pre-Linked Libraries
 *.plx
+
+### JBoss template
+jboss/server/all/deploy/project.ext
+jboss/server/default/deploy/project.ext
+jboss/server/minimal/deploy/project.ext
+jboss/server/all/log/*.log
+jboss/server/all/tmp/**/*
+jboss/server/all/data/**/*
+jboss/server/all/work/**/*
+jboss/server/default/log/*.log
+jboss/server/default/tmp/**/*
+jboss/server/default/data/**/*
+jboss/server/default/work/**/*
+jboss/server/minimal/log/*.log
+jboss/server/minimal/tmp/**/*
+jboss/server/minimal/data/**/*
+jboss/server/minimal/work/**/*
+
+# deployed package files #
+
+*.DEPLOYED
+
+### Meteor template
+# gitignore template for the Meteor framework
+# website: https://www.meteor.com/
+#
+# Recommended template: Node.gitignore
+
+# protect api keys in setting json
+settings-production.json
+settings.json
+
+# protect your mup.json settings
+mup.json
+mup.js
 
 ### Scala template
 *.class
@@ -6239,15 +5984,206 @@ TSWLatexianTemp*
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
 
+### CraftCMS template
+# Craft 2 Storage (https://craftcms.com/support/craft-storage-gitignore)
+# not necessary for Craft 3 (https://github.com/craftcms/craft/issues/26)
+/craft/storage/*
+!/craft/storage/rebrand
+
 ### AppceleratorTitanium template
 # Build folder and log file
 build/
 build.log
 
+### Concrete5 template
+# ignore the error log and .htaccess and others
+error_log
+.htaccess
+
+# concrete5 5.6 specific
+
+config/site.php
+files/cache/*
+files/tmp/*
+
+# concrete5 5.7 specific
+
+# ignore everything but the index.html
+/application/files/*
+!/application/files/index.html
+
+# ignore updates folder
+/updates/*
+
+# ignore sitemap.xml
+/sitemap.xml
+
+### Autotools template
+# http://www.gnu.org/software/automake
+
+Makefile.in
+/ar-lib
+/mdate-sh
+/py-compile
+/test-driver
+/ylwrap
+.deps/
+.dirstamp
+
+# http://www.gnu.org/software/autoconf
+
+autom4te.cache
+/autoscan.log
+/autoscan-*.log
+/aclocal.m4
+/compile
+/config.cache
+/config.guess
+/config.h.in
+/config.log
+/config.status
+/config.sub
+/configure
+/configure.scan
+/depcomp
+/install-sh
+/missing
+/stamp-h1
+
+# https://www.gnu.org/software/libtool/
+
+/ltmain.sh
+
+# http://www.gnu.org/software/texinfo
+
+/texinfo.tex
+
+# http://www.gnu.org/software/m4/
+
+m4/libtool.m4
+m4/ltoptions.m4
+m4/ltsugar.m4
+m4/ltversion.m4
+m4/lt~obsolete.m4
+
+# Generated Makefile
+# (meta build system like autotools,
+# can automatically generate from config.status script
+# (which is called by configure script))
+Makefile
+
 ### Nim template
 nimcache/
 nimblecache/
 htmldocs/
+
+### Hexo template
+# gitignore template for Hexo sites
+# website: https://hexo.io/
+# Recommended: Node.gitignore
+
+# Ignore generated directory
+public/
+
+# Ignore temp files
+tmp/
+.tmp*
+
+# additional files
+db.json
+.deploy*/
+
+### NWjs template
+# gitignore template for NW.js projects
+# website: https://nwjs.io/
+
+# Seen in standard and sdk versions
+credits.html
+locales/
+libEGL.dll
+libGLEv2.dll
+node.dll
+nw.dll
+nw.exe
+natives_blob.bin
+nw_100_percent.pak
+nw_200_percent.pak
+nw_elf.dll
+snapshot_blob.bin
+resources.pak
+
+# Seen only in standard
+d3dcompiler_47.dll
+ffmpeg.dll
+icudtl.dat
+
+# Seen only in sdk
+pnacl/
+chromedriver.exe
+nacl_irt_x86_64.nexe
+nwjc.exe
+payload.exe
+
+### Hugo template
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock
+
+### NasaSpecsIntact template
+# gitignore template for Nasa SpecsIntact (SI)
+# Website: https://specsintact.ksc.nasa.gov/
+#
+# Recommended:
+# MicrosoftOffice.gitignore
+#
+
+# SpecsIntact (SI) Locking file; this would lock everyone out.
+*.se$
+
+# SI Reports; auto-generated. They do not belong in the repository
+# as they will be re-created exactly when using a specific checkout point.
+*.RPT
+ADDRVER.*
+BRKTVER.*
+DUPEREF.*
+REFVER.*
+SECTVER.*
+SUBMVER.*
+TTLDIFFS.*
+
+# SpecsIntact files that change a lot and don't actually affect SI
+# PULL.TBL is an auto-generated file to help speed SI loading.
+PULL.TBL
+pulltbl.bck
+
+# Tailoring information.
+# Keep tailor.tag; it is a list of tailoring options in SI.
+
+# JOB.OTL informs SI where a spec section came from.
+# Keeping the old one isn't useful in git.
+JOB.OTL.OLD
+
+# OneNote TOC Files; SI Work Directories may be installed in a location co-located with OneNote
+# notebooks, and if so, OneNote will litter the SI folder with these.
+*.onetoc*
+
+# Log files, typically tagfix or other auto generated logs that aren't useful
+# outside of the user that made them and clutter up the index.
+*.log
+
+### Zig template
+.zig-cache/
+zig-out/
 
 ### CFWheels template
 # unpacked plugin folders
@@ -6310,4 +6246,60 @@ gradle-app.setting
 # Ignore build outputs from performing a nix-build or `nix build` command
 result
 result-*
+
+### Splunk template
+# gitignore template for Splunk apps
+# documentation: http://docs.splunk.com/Documentation/Splunk/6.2.3/admin/Defaultmetaconf
+
+# Splunk local meta file
+local.meta
+
+# Splunk local folder
+local
+
+### Cordova template
+# gitignore template for the Cordova framework
+# website: https://cordova.apache.org/
+#
+# Recommended template: Node.gitignore
+
+# App platform binaries and built files
+/platforms
+
+# Optional to ignore plugin Git clones
+#/plugins
+
+### Mercury template
+Mercury/
+Mercury.modules
+*.mh
+*.err
+*.init
+*.dll
+*.exe
+*.a
+*.so
+*.dylib
+*.beams
+*.d
+*.c_date
+
+### LabVIEW template
+# Libraries
+*.lvlibp
+*.llb
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+
+# Metadata
+*.aliases
+*.lvlps
+.cache/
 
