@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 from abc import ABC, abstractmethod
 from collections import deque
 from urllib.parse import urlparse
-
 class DeepCrawlStrategy(ABC):
 
     @abstractmethod
