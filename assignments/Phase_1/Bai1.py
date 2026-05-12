@@ -29,10 +29,10 @@ class WhitespaceTokenizer:
 
 tokenizer = WhitespaceTokenizer()
 
-text = '   Hello    word   Hello, hello  '
-print(tokenizer.tokenize(text))
-
-print(tokenizer.count_token_fr(text))
-
-batch_text = ['   Hello   word  ', 'I am learning NLP']
-print(tokenizer.batch_tokenize(batch_text))
+# text = '   Hello    word   Hello, hello  '
+# print(tokenizer.tokenize(text))
+#
+# print(tokenizer.count_token_fr(text))
+#
+# batch_text = ['   Hello   word  ', 'I am learning NLP']
+# print(tokenizer.batch_tokenize(batch_text))
