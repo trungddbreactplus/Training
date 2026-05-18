@@ -1,7 +1,5 @@
 import json
-
 import numpy as np
-
 from Bai6 import TF
 from Bai7 import IDF
 

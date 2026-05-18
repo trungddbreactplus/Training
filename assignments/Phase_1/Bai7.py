@@ -1,5 +1,4 @@
 import math
-
 from Bai1 import WhitespaceTokenizer
 
 
@@ -19,6 +18,6 @@ class IDF:
         return math.log(N / df) if df > 0 else 0.0
 
 
-idf = IDF()
-documents = ["NLP is fun", "I love NLP", "NLP NLP NLP"]
-print(idf.compute(token="nlp", documents=documents))
+# idf = IDF()
+# documents = ["NLP is fun", "I love NLP", "NLP NLP NLP"]
+# print(idf.compute(token="nlp", documents=documents))

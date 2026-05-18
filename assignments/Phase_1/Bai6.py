@@ -17,14 +17,13 @@ class TF:
         elif self.mode == "norm":
             total_tokens = len(tokens)
             return {
-                token: count / total_tokens
-                for token, count in token_counts.items()
+                token: count / total_tokens for token, count in token_counts.items()
             }
         return None
 
 
-tf_norm = TF(mode="norm")
-print(tf_norm.compute("NLP NLP is fun"))
-
-tf_count = TF(mode="count")
-print(tf_count.compute("NLP NLP is fun"))
+# tf_norm = TF(mode="norm")
+# print(tf_norm.compute("NLP NLP is fun"))
+#
+# tf_count = TF(mode="count")
+# print(tf_count.compute("NLP NLP is fun"))
