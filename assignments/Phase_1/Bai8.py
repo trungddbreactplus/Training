@@ -1,5 +1,7 @@
-import math
 import json
+
+import numpy as np
+
 from Bai6 import TF
 from Bai7 import IDF
 
@@ -14,7 +16,7 @@ class TFIDF:
 
     def compute_vector(self, document, documents):
         tf_scores = self.tf.compute(document)
-        vector = [0.0] * len(self.vocab)
+        vector = np.zeros(len(self.vocab))
 
         for token, tf_val in tf_scores.items():
             if token in self.vocab:
@@ -22,17 +24,17 @@ class TFIDF:
                 vector[self.vocab[token]] = tf_val * idf_val
 
         if self.normalize:
-            norm = math.sqrt(sum(v**2 for v in vector))
+            norm = np.linalg.norm(vector)
             if norm > 0:
-                vector = [v / norm for v in vector]
+                vector = vector / norm
 
         return vector
 
     def fit_transform(self, documents):
-        matrix = [self.compute_vector(doc, documents) for doc in documents]
+        matrix = np.array([self.compute_vector(doc, documents) for doc in documents])
         return matrix, self.vocab
 
-    def print_matrix(self, matrix):
+    def print_matrix(self, matrix, documents):
         terms = sorted(self.vocab, key=self.vocab.get)
         print(f"{'':25}" + "".join(f"{t:>10}" for t in terms))
         print("-" * (25 + 10 * len(terms)))
@@ -47,12 +49,9 @@ if __name__ == "__main__":
         "I love machine learning",
     ]
 
-    model = TFIDF(vocab_path="vocab.json")
+    model = TFIDF(vocab_path="vocab.json", smooth=True, normalize=True)
     matrix, vocab = model.fit_transform(documents)
-    model.print_matrix(matrix)
-    print(f"\nVocabulary: {vocab}")
 
-    print("\n=== Smooth + Normalized TF-IDF ===")
-    model2 = TFIDF(vocab_path="vocab.json", smooth=True, normalize=True)
-    matrix2, _ = model2.fit_transform(documents)
-    model2.print_matrix(matrix2)
+    print(f"vocab: {vocab}")
+    print(f"matrix shape: {matrix.shape}\n")
+    model.print_matrix(matrix, documents)
