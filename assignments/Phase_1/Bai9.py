@@ -1,7 +1,6 @@
 import re
 import time
 import unicodedata
-
 import numpy as np
 from datasets import load_dataset
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
@@ -46,8 +45,6 @@ def preprocess_batch(texts: list[str], split_name: str) -> list[str]:
 
 
 # 3. VECTORIZE
-
-
 def vectorize(VecClass, X_train, X_test, name):
     vec = VecClass()
     print(f"  [{name}] fit_transform train …")
@@ -61,8 +58,6 @@ def vectorize(VecClass, X_train, X_test, name):
 
 
 # 4. TRAIN + EVALUATE
-
-
 def run(name, model, X_tr, X_te, y_train, y_test, vec):
     print(f"\n  ── {name} ──")
     t0 = time.perf_counter()
