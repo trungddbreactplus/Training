@@ -6,7 +6,6 @@ from Bai1 import WhitespaceTokenizer
 
 class BagOfWords:
     def __init__(self, vocab_path: str, mode="count"):
-
         with open(vocab_path, "r", encoding="utf-8") as f:
             self.vocab = json.load(f)
 
@@ -20,13 +19,11 @@ class BagOfWords:
         self.tokenizer = WhitespaceTokenizer()
 
     def encode(self, text: str):
-
         tokens = self.tokenizer.tokenize(text)
 
         vector = np.zeros(self.vocab_size, dtype=np.int32)
 
         for token in tokens:
-
             token_id = self.vocab.get(token, self.unk_id)
 
             if token_id == self.pad_id:
@@ -41,15 +38,8 @@ class BagOfWords:
         return vector
 
 
-bow = BagOfWords(
-    vocab_path="vocab.json",
-    mode="count"
-)
+bow = BagOfWords(vocab_path="vocab.json", mode="count")
 
-documents = [
-    "NLP is fun",
-    "I love NLP",
-    "NLP NLP NLP"
-]
+documents = ["NLP is fun", "I love NLP", "NLP NLP NLP"]
 for document in documents:
     print(bow.encode(document))

@@ -5,9 +5,7 @@ from Bai1 import WhitespaceTokenizer
 
 
 class Embedding_OneHot:
-
     def __init__(self, vocab_path: str):
-
         with open(vocab_path, "r", encoding="utf-8") as f:
             self.vocab = json.load(f)
 
@@ -19,17 +17,11 @@ class Embedding_OneHot:
         self.tokenizer = WhitespaceTokenizer()
 
     def onehot(
-        self,
-        batch_text,
-        max_sequence_length=None,
-        padding=True,
-        truncation=True
+        self, batch_text, max_sequence_length=None, padding=True, truncation=True
     ):
-
         batch_vectors = []
 
         for text in batch_text:
-
             tokens = self.tokenizer.tokenize(text)
 
             if truncation and max_sequence_length:
@@ -38,7 +30,6 @@ class Embedding_OneHot:
             sentence_vectors = []
 
             for token in tokens:
-
                 idx = self.vocab.get(token, self.unk_idx)
 
                 vector = np.zeros(self.vocab_size, dtype=int)
@@ -48,7 +39,6 @@ class Embedding_OneHot:
                 sentence_vectors.append(vector)
 
             if padding and max_sequence_length:
-
                 pad_vector = np.zeros(self.vocab_size, dtype=int)
                 pad_vector[self.pad_idx] = 1
 
@@ -62,16 +52,10 @@ class Embedding_OneHot:
 
 onehot = Embedding_OneHot(vocab_path="./vocab.json")
 
-sentences = [
-    "I love NLP",
-    "NLP is very fun"
-]
+sentences = ["I love NLP", "NLP is very fun"]
 
 vectors = onehot.onehot(
-    batch_text=sentences,
-    max_sequence_length=6,
-    padding=True,
-    truncation=True
+    batch_text=sentences, max_sequence_length=6, padding=True, truncation=True
 )
 
 print(vectors.shape)

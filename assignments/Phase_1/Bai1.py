@@ -3,12 +3,11 @@ from collections import Counter
 
 
 class WhitespaceTokenizer:
-
     def lowercase(self, text):
         return text.lower()
 
     def normalize_whitespace(self, text):
-        return re.sub(r'\s+', ' ', text)
+        return re.sub(r"\s+", " ", text)
 
     def remove_punctuation(self, text):
         return re.sub(r"[^\w\s]", "", text, flags=re.UNICODE)
